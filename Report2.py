@@ -152,7 +152,7 @@ def makeClo(mat, r, s, t):
         result = symmetricClo(result)
         print("변환 후:")
         printMat(result)
-    if not t:
+    if not t or not isTra(result):
         print("=== 추이폐포로 변환 (와샬 알고리즘) ===")
         print("변환 전:")
         printMat(result)
